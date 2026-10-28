@@ -1,0 +1,27 @@
+check,passed
+production unique keys,True
+production nonnull keys,True
+sensors unique keys,True
+sensors nonnull keys,True
+inspections unique keys,True
+inspections nonnull keys,True
+events unique keys,True
+events nonnull keys,True
+inspection batch unique,True
+inspection foreign keys,True
+sensor foreign keys,True
+event machine keys,True
+production timestamps,True
+downtime timestamps,True
+inspection after completion,True
+positive volume,True
+sensors available at score time,True
+source target counts,True
+binary labels,True
+split chronology,True
+SQL source join count,True
+SQL source sensor reconciliation,True
+SQL inspected batch reconciliation,True
+SQL failures reconciliation,True
+risk bounds,True
+heldout count,True

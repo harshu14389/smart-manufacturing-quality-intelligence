@@ -1,0 +1,9 @@
+-- SQL view body. Technical names must match imported tables exactly.
+SELECT "DATE_ID", "LINE_ID", "SHIFT_ID", "MODEL_ID",
+SUM("INSPECTED_BATCHES") AS "INSPECTED_BATCHES",
+SUM("FAILED_BATCHES") AS "FAILED_BATCHES",
+SUM("FIRST_PASS_BATCHES") AS "FIRST_PASS_BATCHES",
+SUM("PRODUCTION_VOLUME") AS "PRODUCTION_VOLUME"
+FROM "FACT_BATCH_QUALITY"
+GROUP BY "DATE_ID", "LINE_ID", "SHIFT_ID", "MODEL_ID"
+-- Calculate percentages AFTER aggregation in the analytic model or SAC.
